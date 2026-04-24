@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Dynamic Content Injection (Week 4)
     const menuContainer = document.getElementById('menu-container');
     const specials = [
-        { name: "Garden Salad", price: "$12", desc: "Organic greens with lemon vinaigrette." },
-        { name: "Wild Mushroom Risotto", price: "$22", desc: "Creamy arborio rice with local herbs." },
-        { name: "Berry Tart", price: "$9", desc: "Fresh seasonal berries on a butter crust." }
+        { name: "Thali", price: "$25", desc: "Rice, Aachar, Chicken/Goat,Dal,Ghee,Sweets" },
+        { name: "Momo", price: "$18", desc: "Jhoal Chicken momo" },
+        { name: "Chatpate", price: "$10", desc: "Veg/Non-veg" }
     ];
 
     const displayMenu = () => {
