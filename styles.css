@@ -1,0 +1,80 @@
+/* Color Palette & Variables */
+:root {
+    --green: #2d5a27;
+    --light: #f4f4f4;
+    --dark: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* Flexbox Navigation (Week 2) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--green);
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: white; text-decoration: none; font-weight: bold; }
+
+/* CSS Grid for Responsive Layout (Week 2) */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+}
+
+.menu-item {
+    background: var(--light);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e9ecef;
+    text-align: center;
+}
+
+#reservation-form {
+    max-width: 400px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: var(--green);
+    color: white;
+    cursor: pointer;
+    border: none;
+}

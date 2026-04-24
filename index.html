@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Arohan | Fresh & Local</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">The Arohan</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#booking">Book a Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Fresh Food, Locally Sourced</h1>
+            <p>Experience the finest farm-to-table dining in the city.</p>
+            <button id="menu-btn">View Our Menu</button>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Today's Specials</h2>
+            <div id="menu-container" class="grid-layout">
+                </div>
+        </section>
+
+        <section id="booking">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="date" id="res-date" required>
+                <button type="submit">Confirm Booking</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Arohan. ICT203 Assessment 2.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

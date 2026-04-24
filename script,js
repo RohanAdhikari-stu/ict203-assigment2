@@ -1,0 +1,48 @@
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // 1. Dynamic Content Injection (Week 4)
+    const menuContainer = document.getElementById('menu-container');
+    const specials = [
+        { name: "Garden Salad", price: "$12", desc: "Organic greens with lemon vinaigrette." },
+        { name: "Wild Mushroom Risotto", price: "$22", desc: "Creamy arborio rice with local herbs." },
+        { name: "Berry Tart", price: "$9", desc: "Fresh seasonal berries on a butter crust." }
+    ];
+
+    const displayMenu = () => {
+        menuContainer.innerHTML = specials.map(item => `
+            <div class="menu-item">
+                <h3>${item.name}</h3>
+                <p>${item.desc}</p>
+                <strong>${item.price}</strong>
+            </div>
+        `).join('');
+    };
+
+    displayMenu();
+
+
+    document.getElementById('menu-btn').addEventListener('click', () => {
+        document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    
+    const bookingForm = document.getElementById('reservation-form');
+    const message = document.getElementById('form-message');
+
+    bookingForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Stop page reload
+        
+        const userName = document.getElementById('name').value;
+        
+        
+        message.textContent = "Checking availability...";
+        message.style.color = "blue";
+
+        setTimeout(() => {
+            message.textContent = `Thank you, ${userName}! Your reservation is confirmed.`;
+            message.style.color = "green";
+            bookingForm.reset();
+        }, 1500);
+    });
+});
